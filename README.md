@@ -1,5 +1,32 @@
 # Claude Code Skills Pack
 
+## Use this pack during Days 4 and 5
+
+Follow the [classroom slides](https://github.com/AetherLink-bv/aetherlink-classroom-slides) and your participant repository first.
+Day 5 uses the [SRE starter on `workshop/start`](https://github.com/AetherLink-bv/sre-oncall-agent/tree/workshop/start).
+Its project-local workshop skills are already included. Start Claude Code in that repository.
+You do not need a global bulk installation for the lesson.
+
+Use this full pack for extra workflows after the lesson. To get a current copy, clone it into a new folder:
+
+```sh
+git clone https://github.com/AetherLink-bv/claude-code-skills-pack.git
+cd claude-code-skills-pack
+claude
+```
+
+Paste this prompt:
+
+```text
+Read README.md and inspect the skill I choose. Explain what it does and its requirements. Propose installing only that skill in my chosen project's .claude/skills folder. Check for an existing skill with that name and preserve it. Show the source and target paths. Ask for my approval before copying or replacing anything. Do not install the full pack, change global settings, or run the skill yet.
+```
+
+If the clone folder already exists, keep it intact. Use a new folder for a fresh copy.
+For an existing clean pack clone, run `git status` before `git pull --ff-only`.
+Do not update a participant's exercise branch with these commands.
+
+## About the full pack
+
 A small, public pack of **Claude Code** skills for Worldline / everyday shipping:
 
 1. **`/eli5`** — explain complex code, diffs, and errors simply (intelligent beginner, real mechanism)
