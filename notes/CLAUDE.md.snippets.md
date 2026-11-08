@@ -5,7 +5,7 @@ Paste only what you need into a project `CLAUDE.md`. Keep CLAUDE.md factual; put
 ```markdown
 ## Skills pack
 
-This repo may use skills from RyanLisse/claude-code-skills-pack:
+This repo may use skills from AetherLink-bv/claude-code-skills-pack:
 - `/eli5` for onboarding into unfamiliar code
 - `/deslop` before review if the diff looks AI-heavy
 - `/verify-this` when claiming a fix works

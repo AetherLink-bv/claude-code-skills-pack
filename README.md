@@ -41,7 +41,7 @@ Skills live as folders with a `SKILL.md`. Claude Code loads them from personal o
 #### Option A — personal (all projects)
 
 ```bash
-git clone https://github.com/RyanLisse/claude-code-skills-pack.git
+git clone https://github.com/AetherLink-bv/claude-code-skills-pack.git
 mkdir -p ~/.claude/skills
 cp -R claude-code-skills-pack/skills/* ~/.claude/skills/
 ```
@@ -58,7 +58,7 @@ cp -R /path/to/claude-code-skills-pack/skills/* .claude/skills/
 #### Option C — symlink (easy updates)
 
 ```bash
-git clone https://github.com/RyanLisse/claude-code-skills-pack.git ~/src/claude-code-skills-pack
+git clone https://github.com/AetherLink-bv/claude-code-skills-pack.git ~/src/claude-code-skills-pack
 mkdir -p ~/.claude/skills
 for d in ~/src/claude-code-skills-pack/skills/*; do
   ln -sfn "$d" ~/.claude/skills/$(basename "$d")
