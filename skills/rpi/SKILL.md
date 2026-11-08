@@ -7,7 +7,7 @@ disable-model-invocation: true
 
 # RPI: research → plan → implement
 
-> Adapted from HumanLayer's `research_codebase`, `create_plan` and `implement_plan` commands (Apache-2.0) and modified for this pack. See [ATTRIBUTION.md](https://github.com/RyanLisse/claude-code-skills-pack/blob/main/ATTRIBUTION.md) and [NOTICE](https://github.com/RyanLisse/claude-code-skills-pack/blob/main/NOTICE).
+> Adapted from HumanLayer's `research_codebase`, `create_plan` and `implement_plan` commands (Apache-2.0) and modified for this pack. See [ATTRIBUTION.md](https://github.com/AetherLink-bv/claude-code-skills-pack/blob/main/ATTRIBUTION.md) and [NOTICE](https://github.com/AetherLink-bv/claude-code-skills-pack/blob/main/NOTICE).
 
 Three passes, each leaving a file behind. The files carry the state, so any pass can start in a fresh session.
 
