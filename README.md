@@ -1,19 +1,20 @@
 # Claude Code Skills Pack
 
-## Use this pack during Days 4 and 5
+## Use this pack after Day 5 for the hackathon
 
-Follow the [classroom slides](https://github.com/AetherLink-bv/aetherlink-classroom-slides) and your participant repository first.
+Complete Days 4 and 5 with the [classroom slides](https://github.com/AetherLink-bv/aetherlink-classroom-slides) and your participant repository first.
 Day 5 uses the [SRE starter on `workshop/start`](https://github.com/AetherLink-bv/sre-oncall-agent/tree/workshop/start).
-Its project-local workshop skills are already included. Start Claude Code in that repository.
-You do not need a global bulk installation for the lesson.
+Its project-local workshop skills are already included. Do not install this full pack during the lessons.
 
-Use this full pack for extra workflows after the lesson. To get a current copy, clone it into a new folder:
+After Day 5, use this full pack to choose one useful skill for the hackathon. To get a current copy, clone it into a new folder:
 
 ```sh
 git clone https://github.com/AetherLink-bv/claude-code-skills-pack.git
 cd claude-code-skills-pack
-claude
+claude --setting-sources project --strict-mcp-config --no-chrome
 ```
+
+The project setting disables Claude Code auto memory in this pack clone.
 
 Paste this prompt:
 
