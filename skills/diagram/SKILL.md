@@ -6,7 +6,7 @@ argument-hint: "[architecture | sequence | flow | state | hierarchy] [path, syst
 
 # Diagram: Mermaid first, inline SVG when it must be a file
 
-> Adapted from HumanLayer's `show-me` (MIT, Copyright (c) 2026 HumanLayer), Cocoon AI's `architecture-diagram` (MIT, Copyright (c) 2025 Cocoon AI) and display-dev/visualize's diagram references (MIT, Copyright (c) 2026 display.dev). Modified for this pack; see [ATTRIBUTION.md](https://github.com/RyanLisse/claude-code-skills-pack/blob/main/ATTRIBUTION.md) and [NOTICE](https://github.com/RyanLisse/claude-code-skills-pack/blob/main/NOTICE).
+> Adapted from HumanLayer's `show-me` (MIT, Copyright (c) 2026 HumanLayer), Cocoon AI's `architecture-diagram` (MIT, Copyright (c) 2025 Cocoon AI) and display-dev/visualize's diagram references (MIT, Copyright (c) 2026 display.dev). Modified for this pack; see [ATTRIBUTION.md](https://github.com/AetherLink-bv/claude-code-skills-pack/blob/main/ATTRIBUTION.md) and [NOTICE](https://github.com/AetherLink-bv/claude-code-skills-pack/blob/main/NOTICE).
 
 Request: $ARGUMENTS
 

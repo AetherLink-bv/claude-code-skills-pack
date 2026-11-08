@@ -6,7 +6,7 @@ argument-hint: "[plan | review | diff | recap] [path, PR number, or topic]"
 
 # Visual plan: one self-contained HTML file
 
-> Combines Ryan Lisse's `visualize-html-artifacts` workflow with structure adapted from display-dev/visualize (MIT, Copyright (c) 2026 display.dev) and the "smallest view that makes the point" rule from HumanLayer's `show-me` (MIT, Copyright (c) 2026 HumanLayer). Modified for this pack; see [ATTRIBUTION.md](https://github.com/RyanLisse/claude-code-skills-pack/blob/main/ATTRIBUTION.md) and [NOTICE](https://github.com/RyanLisse/claude-code-skills-pack/blob/main/NOTICE).
+> Combines Ryan Lisse's `visualize-html-artifacts` workflow with structure adapted from display-dev/visualize (MIT, Copyright (c) 2026 display.dev) and the "smallest view that makes the point" rule from HumanLayer's `show-me` (MIT, Copyright (c) 2026 HumanLayer). Modified for this pack; see [ATTRIBUTION.md](https://github.com/AetherLink-bv/claude-code-skills-pack/blob/main/ATTRIBUTION.md) and [NOTICE](https://github.com/AetherLink-bv/claude-code-skills-pack/blob/main/NOTICE).
 
 Make one HTML file that helps a specific reader decide or act on a specific source. Structure first, decoration last.
 

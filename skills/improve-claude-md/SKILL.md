@@ -6,7 +6,7 @@ argument-hint: "[path to CLAUDE.md]"
 
 # Improve CLAUDE.md
 
-> Adapted from HumanLayer's `improve-claude-md` skill (MIT) and modified for this pack: command checks against the repo, progressive disclosure into linked docs, and a propose-then-approve flow. See [ATTRIBUTION.md](https://github.com/RyanLisse/claude-code-skills-pack/blob/main/ATTRIBUTION.md) and [NOTICE](https://github.com/RyanLisse/claude-code-skills-pack/blob/main/NOTICE).
+> Adapted from HumanLayer's `improve-claude-md` skill (MIT) and modified for this pack: command checks against the repo, progressive disclosure into linked docs, and a propose-then-approve flow. See [ATTRIBUTION.md](https://github.com/AetherLink-bv/claude-code-skills-pack/blob/main/ATTRIBUTION.md) and [NOTICE](https://github.com/AetherLink-bv/claude-code-skills-pack/blob/main/NOTICE).
 
 Claude Code loads `CLAUDE.md` into every session. Every line costs context, and a wrong command costs a failed run. Make it short, true and current, then **propose** the change. Never rewrite the file silently.
 
