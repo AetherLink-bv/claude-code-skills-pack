@@ -1,6 +1,6 @@
 # Claude Code Skills Pack
 
-## Use this pack during Days 4 and 5
+## Use selected skills during Day 5
 
 Follow the [classroom slides](https://github.com/AetherLink-bv/aetherlink-classroom-slides) and your participant repository first.
 Day 5 builds Bree in the [Daily Brief participant repository](https://github.com/AetherLink-bv/aetherlink-daily-brief-lab-s1).
@@ -27,8 +27,10 @@ Use the rest of this pack for extra workflows after the lesson. To get a current
 ```sh
 git clone https://github.com/AetherLink-bv/claude-code-skills-pack.git
 cd claude-code-skills-pack
-claude
+claude --setting-sources project --strict-mcp-config --no-chrome
 ```
+
+The project setting disables Claude Code auto memory in this pack clone.
 
 Paste this prompt:
 
