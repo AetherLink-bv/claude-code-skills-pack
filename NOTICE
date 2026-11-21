@@ -4,6 +4,22 @@ Copyright (c) 2026 Ryan Lisse. Licensed under the MIT License (see LICENSE).
 This product includes material adapted from third-party projects.
 
 ------------------------------------------------------------------------
+pstack — cursor/plugins (MIT License)
+------------------------------------------------------------------------
+Source:  https://github.com/cursor/plugins/tree/main/pstack
+Commit:  88d47514b82e7c44f00f2b2a72ff6dd12158038c
+License: MIT, Copyright (c) 2026 Lauren Tan (full text: LICENSES/MIT-pstack.txt)
+Upstream NOTICE file: none in pstack at this commit.
+
+Adapted file (modified):
+  pstack/skills/create-verification-skill/SKILL.md
+      -> skills/create-verification-skill/SKILL.md
+
+Changes: output moved from Cursor's project-local skill layout to Claude
+Code's .claude/skills layout; repository inspection, synthetic evidence,
+private live preflight, cleanup and Bree-specific safety boundaries added.
+
+------------------------------------------------------------------------
 HumanLayer — humanlayer/humanlayer (Apache License 2.0)
 ------------------------------------------------------------------------
 Source:  https://github.com/humanlayer/humanlayer

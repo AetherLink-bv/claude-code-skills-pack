@@ -1,12 +1,28 @@
 # Claude Code Skills Pack
 
-## Use this pack after Day 5 for the hackathon
+## Use selected skills during Day 5
 
-Complete Days 4 and 5 with the [classroom slides](https://github.com/AetherLink-bv/aetherlink-classroom-slides) and your participant repository first.
-Day 5 uses the [SRE starter on `workshop/start`](https://github.com/AetherLink-bv/sre-oncall-agent/tree/workshop/start).
-Its project-local workshop skills are already included. Do not install this full pack during the lessons.
+Follow the [classroom slides](https://github.com/AetherLink-bv/aetherlink-classroom-slides) and your participant repository first.
+Day 5 builds Bree in the [Daily Brief participant repository](https://github.com/AetherLink-bv/aetherlink-daily-brief-lab-s1).
+The [Sonny SRE starter](https://github.com/AetherLink-bv/sre-oncall-agent/tree/workshop/start) is a separate optional bonus.
+Its project-local workshop skills are already included. Start Claude Code in that repository.
+You do not need a global bulk installation for the lesson.
 
-After Day 5, use this full pack to choose one useful skill for the hackathon. To get a current copy, clone it into a new folder:
+Day 5 uses a selected set of project-local skills during the assignments. Each skill supports a visible checkpoint.
+
+| Assignment | Skill | Result to inspect |
+| --- | --- | --- |
+| A1 | `/grilling` | One named reader, decision, and boundary |
+| A2 | `/eli5` | A plain-language explanation of the brief contract |
+| A3 | `/visual-plan` | One offline map of the accepted route |
+| A4 | `/verify-this` | Evidence that the synthetic HTML matches the contract |
+| A5 | `/eli5` | An explanation of the exact source and file-write boundaries |
+| A6 | `/create-verification-skill` | Repeatable checks derived from the actual application |
+| A7 | `/handoff` | A bounded continuation prompt for the participant's own application |
+
+The participant repository includes the required skills and third-party notices. Follow its exact invocations and stop points. The optional ElevenLabs ending repeats the same SDLC with synthetic input. It does not require another skill installation.
+
+Use the rest of this pack for extra workflows after the lesson. To get a current copy, clone it into a new folder:
 
 ```sh
 git clone https://github.com/AetherLink-bv/claude-code-skills-pack.git
@@ -41,7 +57,7 @@ A small, public pack of **Claude Code** skills for Worldline / everyday shipping
 9. **`/improve-claude-md`** — audit a repo's `CLAUDE.md` and propose a shorter, accurate version as a diff
 10. **`/visual-plan`** — turn a plan, plan review, diff review or recap into one self-contained HTML page
 11. **`/diagram`** — architecture, sequence and flow diagrams as Mermaid, or an offline HTML file with inline SVG
-12. **[pstack](#pstack-by-reference)** — poteto's skill set (`/poteto-mode`, verification skills, `/unslop`, …), installed by reference from upstream, not vendored
+12. **[pstack](#pstack-by-reference)** — poteto's skill set (`/poteto-mode`, verification skills, `/unslop`, …), installed by reference from upstream, with one adapted workshop skill included
 
 Aimed at non-experts: copy skills in, type `/skill-name`, get structured help.
 
@@ -68,6 +84,8 @@ Aimed at non-experts: copy skills in, type `/skill-name`, get structured help.
 | diagram | `/diagram` | Architecture / sequence / flow / state diagrams from real code: Mermaid in chat, or HTML + inline SVG; no install (use `/archify` for validated system maps) |
 
 Optional notes: [`notes/CLAUDE.md.snippets.md`](notes/CLAUDE.md.snippets.md), [`notes/hooks-notes.md`](notes/hooks-notes.md), [`notes/archify-claude-code.md`](notes/archify-claude-code.md), [`notes/whats-new-vs-8ff9a8dc.md`](notes/whats-new-vs-8ff9a8dc.md).
+
+For optional visual planning, UI reviews, worst-case layout tests, facilitator illustrations and repeatable Bree verification, see [Day 5 design skills](notes/day5-design-skills.md). The guide references selected upstream skills without installing them or adding requirements to the lesson.
 
 ## Install (Claude Code)
 
@@ -163,11 +181,11 @@ cp -R /tmp/archify-src/archify ~/.claude/skills/archify
 
 [pstack](https://github.com/cursor/plugins/tree/main/pstack) is poteto's (Lauren Tan) set of 56 agent skills and principles for writing less but better-verified code: `/poteto-mode` for rigorous work, verification skills, subagent workflows, and writing clean-up. It lives upstream in [`cursor/plugins`](https://github.com/cursor/plugins) under `pstack/`.
 
-**This pack does not vendor pstack.** pstack is MIT (Copyright (c) 2026 Lauren Tan, see its [`LICENSE`](https://github.com/cursor/plugins/blob/main/pstack/LICENSE)), so copying would be allowed. It still stays upstream: it is released several times a week, and a copy here would go stale and blur whose skill is whose. This repo only documents and pins the version we use and provides an install script.
+The pack includes one Claude Code adaptation: [`create-verification-skill`](skills/create-verification-skill/SKILL.md), used in Day 5. Its source and changes are recorded in [NOTICE](NOTICE), with the original MIT text in [LICENSES/MIT-pstack.txt](LICENSES/MIT-pstack.txt). The rest of pstack stays upstream and uses the pinned installer below.
 
 **Pinned version:** pstack **0.15.29**, upstream commit [`88d4751`](https://github.com/cursor/plugins/tree/88d47514b82e7c44f00f2b2a72ff6dd12158038c/pstack). `cursor/plugins` has no pstack tags, so the pin is the commit that set `pstack/plugin.json` to `0.15.29`.
 
-No pstack skill name clashes with a skill in this pack.
+The adapted `create-verification-skill` shares its upstream name. Use the bundled project copy during the workshop; do not install a second copy for the lesson.
 
 ### Install
 
@@ -268,7 +286,7 @@ See [`notes/whats-new-vs-8ff9a8dc.md`](notes/whats-new-vs-8ff9a8dc.md): added **
 - **[Matt Pocock](https://github.com/mattpocock/skills)** — `/grilling` (MIT).
 - **[Cursor](https://github.com/cursor/plugins)** — team-kit ports and `/cli-for-agents` (MIT).
 - **[tt-a1i/archify](https://github.com/tt-a1i/archify)** — Archify engine and upstream skill (MIT).
-- **[Lauren Tan (poteto)](https://github.com/poteto)** — pstack (MIT), referenced and installed from upstream `cursor/plugins`; no pstack files are copied into this repo.
+- **[Lauren Tan (poteto)](https://github.com/poteto)** — pstack (MIT), referenced and installed from upstream `cursor/plugins`; one adapted verification skill is included with its licence and source notice.
 
 ## Attribution
 
@@ -276,4 +294,4 @@ See [ATTRIBUTION.md](ATTRIBUTION.md). Ports are **rewritten for Claude Code**; t
 
 ## License
 
-MIT — see [LICENSE](LICENSE). Upstream Cursor plugin sources, Archify, HumanLayer's skills repo, display-dev/visualize and Cocoon AI's architecture-diagram-generator are MIT; HumanLayer's commands used by `/rpi` are Apache-2.0. pstack (MIT, Lauren Tan) is installed from upstream and not redistributed here. Third-party license texts are in [`LICENSES/`](LICENSES/) and notices in [NOTICE](NOTICE).
+MIT — see [LICENSE](LICENSE). Upstream Cursor plugin sources, Archify, HumanLayer's skills repo, display-dev/visualize and Cocoon AI's architecture-diagram-generator are MIT; HumanLayer's commands used by `/rpi` are Apache-2.0. One adapted pstack skill (MIT, Lauren Tan) is redistributed here; the remaining collection is installed from upstream. Third-party license texts are in [`LICENSES/`](LICENSES/) and notices in [NOTICE](NOTICE).
