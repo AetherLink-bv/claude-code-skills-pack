@@ -3,7 +3,8 @@
 ## Use this pack during Days 4 and 5
 
 Follow the [classroom slides](https://github.com/AetherLink-bv/aetherlink-classroom-slides) and your participant repository first.
-Day 5 uses the [SRE starter on `workshop/start`](https://github.com/AetherLink-bv/sre-oncall-agent/tree/workshop/start).
+Day 5 builds Bree in the [Daily Brief participant repository](https://github.com/AetherLink-bv/aetherlink-daily-brief-lab-s1).
+The [Sonny SRE starter](https://github.com/AetherLink-bv/sre-oncall-agent/tree/workshop/start) is a separate optional bonus.
 Its project-local workshop skills are already included. Start Claude Code in that repository.
 You do not need a global bulk installation for the lesson.
 
@@ -67,6 +68,8 @@ Aimed at non-experts: copy skills in, type `/skill-name`, get structured help.
 | diagram | `/diagram` | Architecture / sequence / flow / state diagrams from real code: Mermaid in chat, or HTML + inline SVG; no install (use `/archify` for validated system maps) |
 
 Optional notes: [`notes/CLAUDE.md.snippets.md`](notes/CLAUDE.md.snippets.md), [`notes/hooks-notes.md`](notes/hooks-notes.md), [`notes/archify-claude-code.md`](notes/archify-claude-code.md), [`notes/whats-new-vs-8ff9a8dc.md`](notes/whats-new-vs-8ff9a8dc.md).
+
+For optional visual planning, UI reviews, worst-case layout tests, facilitator illustrations and repeatable Bree verification, see [Day 5 design skills](notes/day5-design-skills.md). The guide references selected upstream skills without installing them or adding requirements to the lesson.
 
 ## Install (Claude Code)
 
