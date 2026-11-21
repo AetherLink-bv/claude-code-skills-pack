@@ -43,7 +43,7 @@ Fails when: the whole diff is pasted line by line (over ~300 lines or ~5 files, 
 
 Use exactly these sections: **Shipped**, **Skipped**, **Shifted**, **Learned** (Learned may be short). Empty Skipped or Shifted sections stay, with "None this period", because the absence is information.
 
-- Header: period, scope (repo, team, milestone), sources (PR list, `PROGRESS.md`).
+- Header: period, scope (repo, team, milestone), sources (PR list, the repo's existing progress file).
 - A tally line (`Shipped 7 · Skipped 2 · Shifted 1`) whose counts equal the items below.
 - Shipped items link the PR or commit. Every Skipped or Shifted item carries its reason as decided at the time.
 - Close with next steps: owner and date where known.

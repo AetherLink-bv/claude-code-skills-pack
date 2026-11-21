@@ -1,6 +1,6 @@
 ---
 name: visual-plan
-description: "Turn a plan, a plan review, a diff/PR review or a project recap into one self-contained HTML file a human can read in a browser. Use when the user asks for an HTML plan, a visual plan, a visual diff review, a recap page, or to 'make this plan visual'. For a single diagram use /diagram; for a validated system map use /archify."
+description: "Turn a plan, a plan review, a diff/PR review or a project recap into one self-contained offline HTML file a human can read in a browser. Use when the user asks for an HTML plan, a visual plan, a visual diff review, a recap page, or to 'make this plan visual'."
 argument-hint: "[plan | review | diff | recap] [path, PR number, or topic]"
 ---
 
@@ -23,14 +23,14 @@ Request: $ARGUMENTS
 |---|---|---|
 | `plan` | `plan.md`, a spec, chat decisions | What will change, in what order, how do we know it worked? |
 | `review` | someone's plan | Is this plan ready, and what must change first? |
-| `diff` | branch diff or PR (`git diff`, `gh pr diff <n>`) | What changed, where is the risk, what should I look at? |
-| `recap` | merged PRs, `PROGRESS.md`, a sprint | What shipped, what was skipped or shifted, what did we learn? |
+| `diff` | branch diff or PR (`git diff`; use `gh pr diff <n>` only when `gh` is available) | What changed, where is the risk, what should I look at? |
+| `recap` | merged work, the repo's existing progress file such as `progress.md`, a sprint | What shipped, what was skipped or shifted, what did we learn? |
 
 With no arguments, infer the kind and source from the conversation (an open `plan.md`, the current branch diff); if that is ambiguous, ask which one. If none fits, say so and suggest plain Markdown. If the source is too vague to name target files, checks or owners, ask instead of inventing them.
 
 ## 2. Gather facts, not vibes
 
-- Read the whole source. For `diff`, read the full diff plus enough surrounding code to explain behavior; for `recap`, use `git log`, `gh pr list --state merged` or `PROGRESS.md`.
+- Read the whole source. For `diff`, read the full diff plus enough surrounding code to explain behavior. For `recap`, use `git log`, the repo's existing progress file, or `gh pr list --state merged` when `gh` is available.
 - Every file, step, risk, owner and number in the page must come from the source or the repo. Mark unknowns as **Open question** in the page.
 - Look for brand context: `DESIGN.md`, `tokens.css`, or the project's main stylesheet. Named fonts and palette lead; otherwise keep the skeleton's neutral tokens and say so once.
 
@@ -43,7 +43,7 @@ Before writing HTML, send a short outline: the sections with the question each a
 - One `.html` file, inline CSS, inline SVG, no network requests, no CDN scripts, no web fonts by URL. It must work offline from `file://`.
 - Default path: `docs/visual/YYYY-MM-DD-<kind>-<slug>.html` (or the folder the user named). Do not overwrite an existing file without asking.
 - Lead with the answer: title, one-sentence thesis, labeled metadata (`Status / Draft`, `Branch / feat/x`, `Updated / 20 Oct 2026`).
-- Pick the smallest view per section: a sentence, a list, a table for comparison, a `diff` block for changed shape, a diagram only for relationships prose can't carry. For diagrams, follow `/diagram` (inline SVG, Mermaid only to compute layout, never shipped as a runtime).
+- Pick the smallest view per section: a sentence, a list, a table for comparison, a `diff` block for changed shape, or a small inline SVG when relationships need a diagram. Use the skeleton's figure styles, label every node and edge, and ship no diagram runtime.
 - Status and diff colors are never the only signal: keep `+`/`-` markers and text labels.
 
 ## 5. Bans (rewrite on sight)
